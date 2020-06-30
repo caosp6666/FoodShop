@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# add by csp
+MyFoodshop/secret_key.py
