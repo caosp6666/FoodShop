@@ -2,116 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/leishen.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/goods/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/goods/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/trades/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/trades/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/trades/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/trades/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/trades/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/trades/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/trades/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/trades/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user_operations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user_operations/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user_operations/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user_operations/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user_operations/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user_operations/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user_operations/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user_operations/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/users/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_tools/data/category_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_tools/data/product_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_tools/import_category_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_tools/import_goods_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extra_apps/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/lyfs-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/lyfs-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/scsg-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/scsg-2_G6LV34f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/scsg-2_s2g3L7M.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/scsg-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-1_HPZZvbI.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-1_KDntI6h.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-3_jG6lwp4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/brands/sxsp-3_p6QnMEd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/10_P_1448944572085.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/11_P_1448944388277.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/12_P_1448947547989.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/13_P_1448947460386.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/14_P_1448947354031.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/15_P_1448947257324.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/16_P_1448947194687.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/17_P_1448947102246.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/18_P_1448947011435.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/19_P_1448946951581.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/1_P_1449024889889.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/20_P_1448946850602.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/21_P_1448946793276.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/22_P_1448946729629.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/23_P_1448948070348.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/24_P_1448948023823.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/25_P_1448947875346.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/26_P_1448947825754.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/27_P_1448947771805.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/28_P_1448947699948.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/29_P_1448947631994.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/2_20170719161405_249.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/2_20170719161414_628.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/2_20170719161435_381.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/2_P_1448945810202.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/30_P_1448948663450.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/31_P_1448948598947.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/32_P_1448948525620.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/33_P_1448948479966.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/34_P_1448948399009.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/35_P_1448948333610.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/36_P_1448948234405.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/37_P_1448949284365.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/38_P_1448949220255.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/39_P_1448949115481.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/3_P_1448945490837.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/40_P_1448949038702.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/41_P_1448948980358.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/42_P_1448948895193.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/43_P_1448948762645.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/44_P_1448948850187.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/45_P_1448946661303.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/46_P_1448946598711.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/47_P_1448946213263.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/48_P_1448943988970.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/49_P_1448162819889.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/4_P_1448945381985.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/50_P_1448946543091.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/51_P_1448946466595.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/53_P_1495068879687.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/5_P_1448945270390.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/6_P_1448945167279.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/7_P_1448945104883.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/8_P_1448945032810.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/9_P_1448944791617.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/goods/images/生鲜_20170719161424_153.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/goods/adminx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/trades/adminx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user_operations/adminx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/users/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MyFoodshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyFoodshop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyFoodshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFoodshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,16 +53,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\My_Project\MyFoodshop\media" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\My_Project\MyFoodshop\db_tools\data" />
       <recent name="D:\My_Project\MyFoodshop\extra_apps" />
       <recent name="D:\My_Project\MyFoodshop\apps" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My_Project\MyFoodshop\media" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.import_goods_data">
+  <component name="RunManager" selected="Django server.MyFoodshop">
     <configuration name="import_category_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MyFoodshop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -267,22 +165,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593486944697" />
-    <state width="1877" height="341" key="GridCell.Tab.0.bottom" timestamp="1593525343129">
+    <state width="1877" height="323" key="GridCell.Tab.0.bottom" timestamp="1593532761209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593525343129" />
-    <state width="1877" height="341" key="GridCell.Tab.0.center" timestamp="1593525343129">
+    <state width="1877" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593532761209" />
+    <state width="1877" height="323" key="GridCell.Tab.0.center" timestamp="1593532761209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="341" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593525343129" />
-    <state width="1877" height="341" key="GridCell.Tab.0.left" timestamp="1593525343129">
+    <state width="1877" height="323" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593532761209" />
+    <state width="1877" height="323" key="GridCell.Tab.0.left" timestamp="1593532761208">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="341" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593525343129" />
-    <state width="1877" height="341" key="GridCell.Tab.0.right" timestamp="1593525343129">
+    <state width="1877" height="323" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593532761208" />
+    <state width="1877" height="323" key="GridCell.Tab.0.right" timestamp="1593532761209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="341" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593525343129" />
+    <state width="1877" height="323" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593532761209" />
     <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1593520272513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -298,6 +196,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MyFoodshop$import_category_data.coverage" NAME="import_category_data Coverage Results" MODIFIED="1593524615112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
-    <SUITE FILE_PATH="coverage/MyFoodshop$import_goods_data.coverage" NAME="import_goods_data Coverage Results" MODIFIED="1593525164783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
+    <SUITE FILE_PATH="coverage/MyFoodshop$import_goods_data.coverage" NAME="import_goods_data Coverage Results" MODIFIED="1593532576929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
   </component>
 </project>
