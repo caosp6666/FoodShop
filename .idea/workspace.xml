@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="">
+    <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="添加三种方式比较">
+      <change afterPath="$PROJECT_DIR$/apps/goods/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFoodshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFoodshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/goods/view_django.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/view_django.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="dev" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -165,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593657923824</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加三种方式比较">
+      <created>1593659044216</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593659044216</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +212,16 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="dev" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/dev" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="master" />
                 </option>
               </RecentGroup>
@@ -200,37 +234,38 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="通过django view实现商品列表json数据传输" />
-    <option name="LAST_COMMIT_MESSAGE" value="通过django view实现商品列表json数据传输" />
+    <MESSAGE value="添加三种方式比较" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加三种方式比较" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1593657923132">
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1593666271091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593657923132" />
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593666271091" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1593486944697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593486944697" />
-    <state width="1877" height="317" key="GridCell.Tab.0.bottom" timestamp="1593658990195">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1593666317675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593658990195" />
-    <state width="1877" height="317" key="GridCell.Tab.0.center" timestamp="1593658990195">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593666317675" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1593666317675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593658990195" />
-    <state width="1877" height="317" key="GridCell.Tab.0.left" timestamp="1593658990195">
+    <state width="1877" height="272" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593666317675" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1593666317675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593658990195" />
-    <state width="1877" height="317" key="GridCell.Tab.0.right" timestamp="1593658990195">
+    <state width="1877" height="272" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593666317675" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1593666317675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593658990195" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1593658163115">
+    <state width="1877" height="272" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593666317675" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1593659048915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593658163115" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593659048915" />
     <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1593520272513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

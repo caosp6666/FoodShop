@@ -17,18 +17,18 @@ class GoodsListView(View):
         """
         json_list = []
         goods = Goods.objects.all()[:10]
-
-        # 方法一：使用手动添加
-        # for good in goods:
-        #     json_dict = {}
-        #     json_dict["name"] = good.name
-        #     json_dict["category"] = good.category.name
-        #     json_dict["market_price"] = good.market_price
-        #     # json_dict["add_time"] = good.add_time  # 这个字段无法通过json.dumps序列化
-        #     json_list.append(json_dict)
-        # from django.http import HttpResponse
-        # import json
-        # return HttpResponse(json.dumps(json_list), content_type="application/json")
+#
+#         方法一：手动添加
+#         for good in goods:
+#             json_dict = {}
+#             json_dict["name"] = good.name
+#             json_dict["category"] = good.category.name
+#             json_dict["market_price"] = good.market_price
+#             # json_dict["add_time"] = good.add_time  # 这个字段无法通过json.dumps序列化
+#             json_list.append(json_dict)
+#         from django.http import HttpResponse
+#         import json
+#         return HttpResponse(json.dumps(json_list), content_type="application/json")
 
         # 方法二：使用model_to_dict，同样会有字段不能序列化的问题
         # from django.forms.models import model_to_dict

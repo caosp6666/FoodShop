@@ -14,13 +14,20 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-from django.urls import path
+from django.urls import path, re_path, include
 import xadmin
+from rest_framework.documentation import include_docs_urls
 
-from goods.view_django import GoodsListView
+# from goods.view_django import GoodsListView
+from goods.views import GoodsListView
 
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),
 
     path('goods/', GoodsListView.as_view(), name="goods-list"),
+
+
+
+    re_path(r'^api-auth/', include('rest_framework.urls')),  # DRF登陆的配置
+    re_path(r'docs/', include_docs_urls(title="MyFoodShop")),
 ]
