@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="" />
+    <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/view_django.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/view_django.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
@@ -150,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593657775106</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="通过django view实现商品列表json数据传输">
+      <created>1593657923824</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593657923824</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +181,21 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -173,30 +203,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="通过django view实现商品列表json数据传输" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1593657774345">
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1593657923132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593657774345" />
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593657923132" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1593486944697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593486944697" />
-    <state width="1877" height="317" key="GridCell.Tab.0.bottom" timestamp="1593657884184">
+    <state width="1877" height="317" key="GridCell.Tab.0.bottom" timestamp="1593658990195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593657884184" />
-    <state width="1877" height="317" key="GridCell.Tab.0.center" timestamp="1593657884183">
+    <state width="1877" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593658990195" />
+    <state width="1877" height="317" key="GridCell.Tab.0.center" timestamp="1593658990195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593657884183" />
-    <state width="1877" height="317" key="GridCell.Tab.0.left" timestamp="1593657884183">
+    <state width="1877" height="317" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593658990195" />
+    <state width="1877" height="317" key="GridCell.Tab.0.left" timestamp="1593658990195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593657884183" />
-    <state width="1877" height="317" key="GridCell.Tab.0.right" timestamp="1593657884184">
+    <state width="1877" height="317" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593658990195" />
+    <state width="1877" height="317" key="GridCell.Tab.0.right" timestamp="1593658990195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="317" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593657884184" />
+    <state width="1877" height="317" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593658990195" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1593658163115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593658163115" />
     <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1593520272513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
