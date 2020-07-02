@@ -40,13 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.users.apps.UsersConfig',
-    'apps.goods.apps.GoodsConfig',
-    'apps.trades.apps.TradesConfig',
-    'apps.user_operations.apps.UserOperationsConfig',
+    'goods',
+    'user_operations',
+    'users',
+    'trades',
     'xadmin',
     'crispy_forms',
-
+    'DjangoUeditor',
 ]
 
 MIDDLEWARE = [

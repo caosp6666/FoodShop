@@ -17,6 +17,10 @@ Including another URLconf
 from django.urls import path
 import xadmin
 
+from goods.view_django import GoodsListView
+
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),
+
+    path('goods/', GoodsListView.as_view(), name="goods-list"),
 ]
