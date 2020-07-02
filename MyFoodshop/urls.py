@@ -15,19 +15,25 @@ Including another URLconf
 """
 
 from django.urls import path, re_path, include
+from django.views.static import serve
 import xadmin
 from rest_framework.documentation import include_docs_urls
-
+from rest_framework.routers import DefaultRouter
 # from goods.view_django import GoodsListView
-from goods.views import GoodsListView
+from goods.views import GoodsListView, GoodsListViewSet
+from .settings import MEDIA_ROOT
+
+router = DefaultRouter()
+router.register(r'goods', GoodsListViewSet, basename="goods")
 
 urlpatterns = [
-    path('xadmin/', xadmin.site.urls),
+    path('xadmin/', xadmin.site.urls),  # xadmin后台
+    path('', include(router.urls)),  # router url的配置
 
-    path('goods/', GoodsListView.as_view(), name="goods-list"),
-
-
+    # path('goods/', GoodsListView.as_view(), name="goods-list"),
+    # path('goods/', goods_list, name="goods-list"),
 
     re_path(r'^api-auth/', include('rest_framework.urls')),  # DRF登陆的配置
-    re_path(r'docs/', include_docs_urls(title="MyFoodShop")),
+    re_path(r'docs/', include_docs_urls(title="MyFoodShop")),  # 文档
+    re_path(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),  # 图片的显示
 ]
