@@ -25,11 +25,13 @@ from rest_framework_jwt.views import obtain_jwt_token
 
 # from goods.view_django import GoodsListView
 from goods.views import GoodsListView, GoodsListViewSet, CategoryViewSet
+from users.views import SmsCodeViewset
 from .settings import MEDIA_ROOT
 
 router = DefaultRouter()
 router.register(r'goods', GoodsListViewSet, basename="goods")
 router.register(r'categorys', CategoryViewSet, basename='categorys')
+router.register(r'code', SmsCodeViewset, basename='code')
 
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),  # xadmin后台

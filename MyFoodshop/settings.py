@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import sys
+import datetime
+
 from MyFoodshop.secret_key import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -158,3 +160,10 @@ CORS_ORIGIN_ALLOW_ALL = True  # 跨域问题
 AUTHENTICATION_BACKENDS = (
     'users.views.CustomAuthBackend',
 )
+
+JWT_AUTH = {
+    'JWT_EXPARATION_DELTA': datetime.timedelta(days=7),  # 相当于7天免登陆
+    'JWT_AUTH_HEADER_PREFIX': 'JWT',
+}
+
+REGEX_MOBILE = "^((\+|00)86)?((134\d{4})|((13[0-3|5-9]|14[1|5-9]|15[0-9]|16[2|5|6|7]|17[0-8]|18[0-9]|19[0-2|5-9])\d{8}))$"
