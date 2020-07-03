@@ -19,6 +19,10 @@ from django.views.static import serve
 import xadmin
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
+from rest_framework.authtoken import views
+from rest_framework_jwt.views import obtain_jwt_token
+
+
 # from goods.view_django import GoodsListView
 from goods.views import GoodsListView, GoodsListViewSet, CategoryViewSet
 from .settings import MEDIA_ROOT
@@ -34,7 +38,11 @@ urlpatterns = [
     # path('goods/', GoodsListView.as_view(), name="goods-list"),
     # path('goods/', goods_list, name="goods-list"),
 
+    path('login/', obtain_jwt_token),  # 登陆
     re_path(r'^api-auth/', include('rest_framework.urls')),  # DRF登陆的配置
     re_path(r'docs/', include_docs_urls(title="MyFoodShop")),  # 文档
-    re_path(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),  # 图片的显示
+    re_path(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),  # media文件获取
+
+    # path('api-token-auth/', views.obtain_auth_token),  # drf自带的token验证模式，测试用
+    # path('jwt_auth/', obtain_jwt_token),  # JWT验证模式，测试用
 ]
