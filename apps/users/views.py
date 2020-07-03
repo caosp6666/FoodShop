@@ -58,14 +58,14 @@ class SmsCodeViewset(CreateModelMixin, viewsets.GenericViewSet):
                 "mobile": sms_status["msg"],
             }, status=status.HTTP_400_BAD_REQUEST)
         else:
-            # 将code保存到redis
-            red = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=0, charset='utf8', decode_responses=True)
-            red.set(str(mobile), str(code))
-            red.expire(str(mobile), 5 * 60)  # 五分钟过期
+            # # 将code保存到redis
+            # red = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=0, charset='utf8', decode_responses=True)
+            # red.set(str(mobile), str(code))
+            # red.expire(str(mobile), 5 * 60)  # 五分钟过期
 
-            # # 将code保存到mysql
-            # code_record = VerifyCode(code=code, mobile=mobile)
-            # code_record.save()
+            # 将code保存到mysql
+            code_record = VerifyCode(code=code, mobile=mobile)
+            code_record.save()
 
             return Response({
                 "mobile": mobile,

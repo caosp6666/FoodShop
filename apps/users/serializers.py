@@ -32,4 +32,13 @@ class SmsSerializer(serializers.Serializer):
         if VerifyCode.objects.filter(add_time__gt=one_minute_ago, mobile=mobile).count():
             raise serializers.ValidationError("距离上一次发送时间过短")  # 这里一般前端也会限制，这是为了防止黑客
 
+        # 如果使用redis这里得改
+        # import redis
+        # from MyFoodshop.secret_key import REDIS_HOST, REDIS_PORT
+        # red = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=0, charset='utf8', decode_responses=True)
+        # ttl = red.ttl(mobile)  # 设置了5分钟，如果剩余时间大于4分钟就说明间隔过短
+        # if ttl > 4 * 60:
+        #     raise serializers.ValidationError("距离上一次发送时间过短")  # 这里一般前端也会限制，这是为了防止黑客
+
+
         return mobile
