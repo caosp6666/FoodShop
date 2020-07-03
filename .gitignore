@@ -132,3 +132,4 @@ dmypy.json
 MyFoodshop/secret_key.py
 extra_apps
 */__pycache__
+.idea
