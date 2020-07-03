@@ -131,3 +131,4 @@ dmypy.json
 # add by csp
 MyFoodshop/secret_key.py
 extra_apps
+*/__pycache__
