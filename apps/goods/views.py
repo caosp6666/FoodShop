@@ -14,9 +14,9 @@ from .filters import GoodsFilter
 
 
 class GoodsPagination(PageNumberPagination):
-    page_size = 10
+    page_size = 12
     page_size_query_param = 'page_size'
-    page_query_param = 'p'  # 决定next页面的url参数
+    page_query_param = 'page'  # 决定next页面的url参数
     max_page_size = 100
 
 
