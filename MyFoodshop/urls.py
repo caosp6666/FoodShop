@@ -20,11 +20,12 @@ import xadmin
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
 # from goods.view_django import GoodsListView
-from goods.views import GoodsListView, GoodsListViewSet
+from goods.views import GoodsListView, GoodsListViewSet, CategoryViewSet
 from .settings import MEDIA_ROOT
 
 router = DefaultRouter()
 router.register(r'goods', GoodsListViewSet, basename="goods")
+router.register(r'categorys', CategoryViewSet, basename='categorys')
 
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),  # xadmin后台
