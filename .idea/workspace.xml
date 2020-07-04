@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="手机验证码功能实现">
+    <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="注册功能得后台实现">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyFoodshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +293,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593789989073</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="手机验证码功能实现">
+      <created>1593878812440</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1593878812440</updated>
+    </task>
+    <task id="LOCAL-00017" summary="注册功能得后台实现">
+      <created>1593878934994</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1593878934994</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,13 +363,14 @@
     <MESSAGE value="通过类别过滤商品" />
     <MESSAGE value="JWT认证" />
     <MESSAGE value="手机验证码功能实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="手机验证码功能实现" />
+    <MESSAGE value="注册功能得后台实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册功能得后台实现" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1593878838533">
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1593878974019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593878838533" />
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593878974019" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1593486944697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -382,10 +395,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593852903748" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1593878814078">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1593878936828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593878814078" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593878936828" />
     <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1593520272513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -398,17 +411,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593524693417" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apps/users/serializers.py</url>
-          <line>69</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MyFoodshop$tests.coverage" NAME="tests Coverage Results" MODIFIED="1593849823975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/users" />

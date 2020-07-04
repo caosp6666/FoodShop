@@ -61,6 +61,7 @@ class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(
         style={'input_type': 'password'},
         label='密码',
+        write_only=True,
     )
 
     def validate_code(self, code):
