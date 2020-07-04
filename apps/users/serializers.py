@@ -64,6 +64,12 @@ class RegisterSerializer(serializers.ModelSerializer):
         write_only=True,
     )
 
+    def create(self, validated_data):
+        user = super(RegisterSerializer, self).create(validated_data=validated_data)
+        user.set_password(validated_data["password"])
+        user.save()
+        return user
+
     def validate_code(self, code):
         verify_code_record = VerifyCode.objects.filter(mobile=self.initial_data["username"]).order_by("-add_time")
         print(verify_code_record)
