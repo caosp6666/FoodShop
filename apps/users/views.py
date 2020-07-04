@@ -11,9 +11,10 @@ from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework import status
 from utils.YunPian import YunPian
-from .serializers import SmsSerializer
+from .serializers import SmsSerializer, RegisterSerializer
 from MyFoodshop.secret_key import yunpian_api_key, REDIS_PORT, REDIS_HOST
 from .models import VerifyCode
+
 User = get_user_model()
 
 
@@ -27,7 +28,7 @@ class CustomAuthBackend(ModelBackend):
             return None
 
 
-class SmsCodeViewset(CreateModelMixin, viewsets.GenericViewSet):
+class SmsCodeViewSet(CreateModelMixin, viewsets.GenericViewSet):
     """
     send sms code
     """
@@ -70,3 +71,8 @@ class SmsCodeViewset(CreateModelMixin, viewsets.GenericViewSet):
             return Response({
                 "mobile": mobile,
             }, status=status.HTTP_201_CREATED)
+
+
+class UserViewSet(CreateModelMixin, viewsets.GenericViewSet):
+    serializer_class = RegisterSerializer
+    queryset = User.objects.all()
