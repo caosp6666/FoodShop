@@ -9,7 +9,7 @@ from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
 from django.contrib.auth import get_user_model
 from MyFoodshop.settings import REGEX_MOBILE, REDIS_PORT, REDIS_HOST
-from .models import VerifyCode
+from apps.users.models import VerifyCode
 
 User = get_user_model()
 

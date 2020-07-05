@@ -13,7 +13,7 @@ from rest_framework import status
 from utils.YunPian import YunPian
 from .serializers import SmsSerializer, RegisterSerializer
 from MyFoodshop.secret_key import yunpian_api_key, REDIS_PORT, REDIS_HOST
-from .models import VerifyCode
+from apps.users.models import VerifyCode
 
 User = get_user_model()
 

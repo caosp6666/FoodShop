@@ -25,7 +25,7 @@ from rest_framework_jwt.views import obtain_jwt_token
 
 # from goods.view_django import GoodsListView
 from goods.views import GoodsListView, GoodsListViewSet, CategoryViewSet
-from users.views import SmsCodeViewSet, UserViewSet
+from apps.users.views import SmsCodeViewSet, UserViewSet
 from .settings import MEDIA_ROOT
 
 router = DefaultRouter()

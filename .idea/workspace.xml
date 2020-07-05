@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="将明文密码修改为密文">
-      <change afterPath="$PROJECT_DIR$/apps/users/signals.py" afterDir="false" />
+    <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFoodshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFoodshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593879815048</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="通过信号处理密码">
+      <created>1593964528991</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1593964528991</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,45 +405,46 @@
     <MESSAGE value="注册功能得后台实现" />
     <MESSAGE value="不返回password" />
     <MESSAGE value="将明文密码修改为密文" />
-    <option name="LAST_COMMIT_MESSAGE" value="将明文密码修改为密文" />
+    <MESSAGE value="通过信号处理密码" />
+    <option name="LAST_COMMIT_MESSAGE" value="通过信号处理密码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1593879122744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1593879122744" />
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1593963973088">
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1593964535371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593963973088" />
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593964535371" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1593486944697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593486944697" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1593964471329">
+    <state width="1877" height="429" key="GridCell.Tab.0.bottom" timestamp="1593966116884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593964471329" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1593964471329">
+    <state width="1877" height="429" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593966116884" />
+    <state width="1877" height="429" key="GridCell.Tab.0.center" timestamp="1593966116884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593964471329" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1593964471329">
+    <state width="1877" height="429" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593966116884" />
+    <state width="1877" height="429" key="GridCell.Tab.0.left" timestamp="1593966116884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593964471329" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1593964471329">
+    <state width="1877" height="429" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593966116884" />
+    <state width="1877" height="429" key="GridCell.Tab.0.right" timestamp="1593966116884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593964471329" />
+    <state width="1877" height="429" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593966116884" />
     <state x="461" y="161" key="SettingsEditor" timestamp="1593852903748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593852903748" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1593879106583">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1593964531697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593879106583" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593964531697" />
     <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1593520272513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

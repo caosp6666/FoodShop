@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'goods',
     'user_operations',
-    'users',
+    'users.apps.UsersConfig',
     'trades',
     'xadmin',
     'crispy_forms',
