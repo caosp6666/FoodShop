@@ -10,6 +10,7 @@ from rest_framework.mixins import CreateModelMixin
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework_jwt.serializers import jwt_payload_handler, jwt_encode_handler
 from utils.YunPian import YunPian
 from .serializers import SmsSerializer, RegisterSerializer
 from MyFoodshop.secret_key import yunpian_api_key, REDIS_PORT, REDIS_HOST
@@ -76,3 +77,21 @@ class SmsCodeViewSet(CreateModelMixin, viewsets.GenericViewSet):
 class UserViewSet(CreateModelMixin, viewsets.GenericViewSet):
     serializer_class = RegisterSerializer
     queryset = User.objects.all()
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        now_user = self.perform_create(serializer)
+
+        now_payload = jwt_payload_handler(now_user)
+        now_token = jwt_encode_handler(now_payload)
+
+        now_dict = serializer.data
+        now_dict["token"] = now_token
+        now_dict["name"] = now_user.name if now_user.name else now_user.username
+
+        headers = self.get_success_headers(serializer.data)
+        return Response(now_dict, status=status.HTTP_201_CREATED, headers=headers)
+
+    def perform_create(self, serializer):
+        return serializer.save()
