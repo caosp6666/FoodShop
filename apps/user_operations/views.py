@@ -3,13 +3,12 @@ from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.authentication import SessionAuthentication, BaseAuthentication
-from apps.user_operations.serializers import UserFavSerializer, UserFavListSerializer
-from apps.user_operations.models import UserFav
+from apps.user_operations.serializers import UserFavSerializer, UserFavListSerializer, MessageSerializer, AddressSerializer
+from apps.user_operations.models import UserFav, UserLeavingMessage, UserAddress
 from utils.permissions import IsOwnerOrReadOnly
 
 
-class UserFavViewSet(mixins.CreateModelMixin, mixins.ListModelMixin, mixins.RetrieveModelMixin,
-                     mixins.DestroyModelMixin, viewsets.GenericViewSet):
+class UserFavViewSet(viewsets.ModelViewSet):
     """
     list:
         获取用户收藏列表
@@ -30,3 +29,40 @@ class UserFavViewSet(mixins.CreateModelMixin, mixins.ListModelMixin, mixins.Retr
 
     def get_queryset(self):
         return UserFav.objects.filter(user=self.request.user)
+
+
+class MessageViewSet(mixins.ListModelMixin, mixins.CreateModelMixin, mixins.DestroyModelMixin, viewsets.GenericViewSet):
+    """
+    list:
+        获取留言
+    create:
+        添加留言
+    delete:
+        删除留言
+    """
+    permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
+    authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
+    serializer_class = MessageSerializer
+
+    def get_queryset(self):
+        return UserLeavingMessage.objects.filter(user=self.request.user)
+
+
+class AddressViewSet(viewsets.ModelViewSet):
+    """
+    收货地址管理
+    list:
+        获取收获地址
+    create:
+        添加收获地址
+    update:
+        更新收获地址
+    delete:
+        删除收货地址
+    """
+    permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
+    authentication_classes = (JSONWebTokenAuthentication, SessionAuthentication)
+    serializer_class = AddressSerializer
+
+    def get_queryset(self):
+        return UserAddress.objects.filter(user=self.request.user)

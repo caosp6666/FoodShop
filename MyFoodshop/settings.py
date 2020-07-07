@@ -164,7 +164,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 JWT_AUTH = {
-    'JWT_EXPARATION_DELTA': datetime.timedelta(days=7),  # 相当于7天免登陆
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),  # 相当于7天免登陆
     'JWT_AUTH_HEADER_PREFIX': 'JWT',
 }
 

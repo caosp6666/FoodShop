@@ -25,7 +25,7 @@ from rest_framework_jwt.views import obtain_jwt_token
 # from goods.view_django import GoodsListView
 from goods.views import GoodsListView, GoodsListViewSet, CategoryViewSet
 from users.views import SmsCodeViewSet, UserViewSet
-from user_operations.views import UserFavViewSet
+from user_operations.views import UserFavViewSet, MessageViewSet, AddressViewSet
 from .settings import MEDIA_ROOT
 
 router = DefaultRouter()
@@ -35,6 +35,10 @@ router.register(r'code', SmsCodeViewSet, basename='code')
 router.register(r'user', UserViewSet, basename='user')
 # 收藏
 router.register(r'userfavs', UserFavViewSet, basename='userfavs')
+# 留言
+router.register(r'messages', MessageViewSet, basename='messages')
+# 收获地址
+router.register(r'address', AddressViewSet, basename='address')
 
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),  # xadmin后台
