@@ -6,13 +6,14 @@ from random import choice
 from django.contrib.auth.backends import ModelBackend
 from django.contrib.auth import get_user_model
 from django.db.models import Q
-from rest_framework.mixins import CreateModelMixin
+from rest_framework.mixins import CreateModelMixin, RetrieveModelMixin, UpdateModelMixin
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework import permissions
 from rest_framework_jwt.serializers import jwt_payload_handler, jwt_encode_handler
 from utils.YunPian import YunPian
-from .serializers import SmsSerializer, RegisterSerializer
+from apps.users.serializers import SmsSerializer, RegisterSerializer, UserDetailSerializer
 from MyFoodshop.secret_key import yunpian_api_key, REDIS_PORT, REDIS_HOST
 from apps.users.models import VerifyCode
 
@@ -74,9 +75,32 @@ class SmsCodeViewSet(CreateModelMixin, viewsets.GenericViewSet):
             }, status=status.HTTP_201_CREATED)
 
 
-class UserViewSet(CreateModelMixin, viewsets.GenericViewSet):
+class UserViewSet(CreateModelMixin, RetrieveModelMixin, UpdateModelMixin, viewsets.GenericViewSet):
     serializer_class = RegisterSerializer
     queryset = User.objects.all()
+
+    def get_serializer_class(self):
+        """
+        根据action动态选择serializer
+        :return:
+        """
+        if self.action == "create":
+            return RegisterSerializer
+        else:
+            return UserDetailSerializer
+
+    def get_permissions(self):
+        """
+        根据action动态选择permission，create不需要登陆，其他需要
+        :return:
+        """
+        if self.action == "create":
+            return []
+        else:
+            return [permissions.IsAuthenticated()]
+
+    def get_object(self):
+        return self.request.user
 
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
@@ -94,4 +118,9 @@ class UserViewSet(CreateModelMixin, viewsets.GenericViewSet):
         return Response(now_dict, status=status.HTTP_201_CREATED, headers=headers)
 
     def perform_create(self, serializer):
+        """
+
+        :param serializer:
+        :return: 这里重写是为了返回一个user对象
+        """
         return serializer.save()
