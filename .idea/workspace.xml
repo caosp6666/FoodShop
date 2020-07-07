@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/message/images/2_P_1448945810202.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/message/images/2_P_1448945810202_iC4IYPj.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/message/images/3_P_1448945490837.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyFoodshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyFoodshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user_operations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user_operations/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/user_operations/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user_operations/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/user_operations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user_operations/views.py" afterDir="false" />
     </list>
@@ -196,7 +190,7 @@
       <workItem from="1593499680375" duration="614000" />
       <workItem from="1593520261515" duration="5082000" />
       <workItem from="1594048462262" duration="651000" />
-      <workItem from="1594102017472" duration="16949000" />
+      <workItem from="1594102017472" duration="17371000" />
     </task>
     <task id="LOCAL-00001" summary="通过django view实现商品列表json数据传输">
       <created>1593657775106</created>
@@ -387,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594121776801</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="收货地址、用户留言">
+      <created>1594126016799</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1594126016799</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,17 +452,18 @@
     <MESSAGE value="用户收藏功能" />
     <MESSAGE value="文档配置" />
     <MESSAGE value="用户收藏" />
-    <option name="LAST_COMMIT_MESSAGE" value="用户收藏" />
+    <MESSAGE value="收货地址、用户留言" />
+    <option name="LAST_COMMIT_MESSAGE" value="收货地址、用户留言" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1593879122744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1593879122744" />
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594121775829">
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594126015897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594121775829" />
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594126015897" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1594110543483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

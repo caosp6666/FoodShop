@@ -30,6 +30,9 @@ class UserFavSerializer(serializers.ModelSerializer):
 
 
 class UserFavListSerializer(serializers.ModelSerializer):
+    """
+    用于查看用户收藏
+    """
     goods = GoodsSerializer()
 
     class Meta:

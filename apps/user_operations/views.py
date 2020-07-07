@@ -18,7 +18,7 @@ class UserFavViewSet(viewsets.ModelViewSet):
         收藏商品
     """
     queryset = UserFav.objects.all()
-    permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)
+    permission_classes = (IsAuthenticated, IsOwnerOrReadOnly)  # 验证是否登录
     lookup_field = "goods_id"  # 指定param对应的字段，默认是pk（id）中找，这里改成根据商品的id找
 
     def get_serializer_class(self):
@@ -26,6 +26,12 @@ class UserFavViewSet(viewsets.ModelViewSet):
             return UserFavListSerializer
         else:
             return UserFavSerializer
+
+    def perform_create(self, serializer):
+        instance = serializer.save()  # 得到serializer
+        goods = instance.goods
+        goods.fav_num += 1  # 对收藏数加1
+        goods.save()
 
     def get_queryset(self):
         return UserFav.objects.filter(user=self.request.user)
