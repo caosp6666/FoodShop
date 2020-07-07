@@ -22,10 +22,10 @@ from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views
 from rest_framework_jwt.views import obtain_jwt_token
 
-
 # from goods.view_django import GoodsListView
 from goods.views import GoodsListView, GoodsListViewSet, CategoryViewSet
-from apps.users.views import SmsCodeViewSet, UserViewSet
+from users.views import SmsCodeViewSet, UserViewSet
+from user_operations.views import UserFavViewSet
 from .settings import MEDIA_ROOT
 
 router = DefaultRouter()
@@ -33,7 +33,8 @@ router.register(r'goods', GoodsListViewSet, basename="goods")
 router.register(r'categorys', CategoryViewSet, basename='categorys')
 router.register(r'code', SmsCodeViewSet, basename='code')
 router.register(r'user', UserViewSet, basename='user')
-
+# 收藏
+router.register(r'userfavs', UserFavViewSet, basename='userfavs')
 
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),  # xadmin后台
