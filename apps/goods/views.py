@@ -8,8 +8,9 @@ from rest_framework import viewsets
 from rest_framework.filters import SearchFilter, OrderingFilter
 from django_filters.rest_framework import DjangoFilterBackend
 
-from apps.goods.models import Goods, GoodsCategory
-from apps.goods.serializers import GoodsSerializer, CategorySerializer
+from apps.goods.models import Goods, GoodsCategory, Banner, HotSearchWords
+from apps.goods.serializers import GoodsSerializer, CategorySerializer, BannerSerializer, HotSearchWordsSerializer, \
+    IndexGoodsCategorySerializer
 from apps.goods.filters import GoodsFilter
 
 
@@ -87,3 +88,27 @@ class CategoryViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets
     # queryset = GoodsCategory.objects.all()
     queryset = GoodsCategory.objects.filter(category_type=1)  # 获取第一大类
     serializer_class = CategorySerializer
+
+
+class BannerViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+    """
+    获取轮播图列表
+    """
+    queryset = Banner.objects.all().order_by("index")
+    serializer_class = BannerSerializer
+
+
+class HotSearchWordsViewSet(mixins.ListModelMixin, mixins.CreateModelMixin, viewsets.GenericViewSet):
+    """
+    获取热搜词
+    """
+    queryset = HotSearchWords.objects.all().order_by("-search_nums")[:3]
+    serializer_class = HotSearchWordsSerializer
+
+
+class IndexGoodsCategoryViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+    """
+    主页的分类展示列表
+    """
+    queryset = GoodsCategory.objects.filter(is_tab=True)
+    serializer_class = IndexGoodsCategorySerializer

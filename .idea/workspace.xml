@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/trades/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/goods/migrations/0002_auto_20200708_1117.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/goods/migrations/0003_indexad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user_operations/migrations/0002_auto_20200708_1117.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/banner/banner1_qlGlwc9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/banner/banner2_GmcsBvj.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/banner/banner3_u5SU5y2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyFoodshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/trades/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trades/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +199,7 @@
       <workItem from="1593499680375" duration="614000" />
       <workItem from="1593520261515" duration="5082000" />
       <workItem from="1594048462262" duration="651000" />
-      <workItem from="1594102017472" duration="26387000" />
+      <workItem from="1594102017472" duration="32370000" />
     </task>
     <task id="LOCAL-00001" summary="通过django view实现商品列表json数据传输">
       <created>1593657775106</created>
@@ -396,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594126557740</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="添加订单功能">
+      <created>1594175892215</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1594175892215</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,17 +477,18 @@
     <MESSAGE value="用户收藏" />
     <MESSAGE value="收货地址、用户留言" />
     <MESSAGE value="功能完善" />
-    <option name="LAST_COMMIT_MESSAGE" value="功能完善" />
+    <MESSAGE value="添加订单功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加订单功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1593879122744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1593879122744" />
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594126556859">
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594186167631">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594126556859" />
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594186167631" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1594110543483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -481,22 +497,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593486944697" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1594173838776">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1594186135410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594173838776" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1594173838776">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594186135410" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1594186135410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594173838776" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1594173838776">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594186135410" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1594186135410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594173838776" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1594173838776">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594186135410" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1594186135410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594173838776" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594186135410" />
     <state x="461" y="161" key="SettingsEditor" timestamp="1594112626140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

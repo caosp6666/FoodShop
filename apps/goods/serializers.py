@@ -4,7 +4,7 @@
 # @Software: PyCharm
 
 from rest_framework import serializers
-from .models import Goods, GoodsCategory, GoodsImage
+from .models import Goods, GoodsCategory, GoodsImage, Banner, HotSearchWords, GoodsCategoryBrand, IndexAd
 
 
 class CategorySerializer3(serializers.ModelSerializer):
@@ -40,7 +40,7 @@ class CategorySerializer(serializers.ModelSerializer):
 class GoodsImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = GoodsImage
-        fields = ('image', )
+        fields = ('image',)
 
 
 class GoodsSerializer(serializers.ModelSerializer):
@@ -50,4 +50,39 @@ class GoodsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Goods
         # fields = ('name', 'click_num', 'shop_price', 'goods_front_image', 'add_time')
+        fields = "__all__"
+
+
+class BannerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Banner
+        fields = "__all__"
+
+
+class HotSearchWordsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = HotSearchWords
+        fields = ("keywords",)
+
+
+class BrandSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GoodsCategoryBrand
+        fields = "__all__"
+
+
+class IndexGoodsCategorySerializer(serializers.ModelSerializer):
+    brands = BrandSerializer(many=True)  # 一级类别对应品牌
+    goods = serializers.SerializerMethodField()  # 一级类别对应商品
+    sub_cat = CategorySerializer2(many=True)  # 二级类别
+
+    def get_goods(self, obj):
+        from django.db.models import Q
+        all_goods = Goods.objects.filter(Q(category_id=obj.id) | Q(category__father_category_id=obj.id) | Q(
+            category__father_category__father_category_id=obj.id))
+        goods = GoodsSerializer(all_goods, many=True)
+        return goods.data
+
+    class Meta:
+        model = GoodsCategory
         fields = "__all__"

@@ -23,7 +23,8 @@ from rest_framework.authtoken import views
 from rest_framework_jwt.views import obtain_jwt_token
 
 # from goods.view_django import GoodsListView
-from goods.views import GoodsListView, GoodsListViewSet, CategoryViewSet
+from goods.views import GoodsListView, GoodsListViewSet, CategoryViewSet, BannerViewSet, HotSearchWordsViewSet, \
+    IndexGoodsCategoryViewSet
 from users.views import SmsCodeViewSet, UserViewSet
 from user_operations.views import UserFavViewSet, MessageViewSet, AddressViewSet
 from apps.trades.views import ShoppingCartViewSet, OrderViewSet
@@ -44,6 +45,16 @@ router.register(r'address', AddressViewSet, basename='address')
 router.register(r'shoppingcarts', ShoppingCartViewSet, basename='shoppingcarts')
 # 订单
 router.register(r'orders', OrderViewSet, basename='orders')
+
+# 首页轮播图
+router.register(r'banner', BannerViewSet, basename='banner')
+# 热搜词
+router.register(r'hotsearchs', HotSearchWordsViewSet, basename='hotsearchs')
+# 首页分类展示列表
+router.register(r'indexgoods', IndexGoodsCategoryViewSet, basename='indexgoods')
+
+
+
 
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),  # xadmin后台
