@@ -12,7 +12,11 @@ class GoodsFilter(filters.FilterSet):
     price_min = filters.NumberFilter(field_name="shop_price", lookup_expr='gte')
     price_max = filters.NumberFilter(field_name="shop_price", lookup_expr='lte')
     # name = filters.CharFilter(field_name="name", lookup_expr='icontains')  # contains代表包含，i代表不区分大小写，相当于搜索
-    top_category = filters.NumberFilter(method='top_category_filter', )
+    top_category = filters.NumberFilter(method='top_category_filter', label='一级目录')
+    is_new = filters.BooleanFilter(method='is_new_filter', )
+
+    def is_new_filter(self, queryset, name, value):
+        return queryset.filter(is_new=True)[:2]
 
     def top_category_filter(self, queryset, name, value):
         return queryset.filter(Q(category_id=value) | Q(category__father_category_id=value) | Q(
@@ -20,4 +24,4 @@ class GoodsFilter(filters.FilterSet):
 
     class Meta:
         model = Goods
-        fields = ['price_min', 'price_max', 'name', 'is_hot', 'is_new']
+        fields = ['price_min', 'price_max', 'name', 'is_hot', 'is_new', 'top_category']

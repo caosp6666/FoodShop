@@ -3,7 +3,8 @@ from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.authentication import SessionAuthentication, BaseAuthentication
-from apps.user_operations.serializers import UserFavSerializer, UserFavListSerializer, MessageSerializer, AddressSerializer
+from apps.user_operations.serializers import UserFavSerializer, UserFavListSerializer, MessageSerializer, \
+    AddressSerializer
 from apps.user_operations.models import UserFav, UserLeavingMessage, UserAddress
 from utils.permissions import IsOwnerOrReadOnly
 
@@ -27,11 +28,17 @@ class UserFavViewSet(viewsets.ModelViewSet):
         else:
             return UserFavSerializer
 
-    def perform_create(self, serializer):
-        instance = serializer.save()  # 得到serializer
-        goods = instance.goods
-        goods.fav_num += 1  # 对收藏数加1
-        goods.save()
+    # def perform_create(self, serializer):
+    #     instance = serializer.save()  # 得到serializer
+    #     goods = instance.goods
+    #     goods.fav_num += 1  # 对收藏数加1
+    #     goods.save()
+    #
+    # def perform_destroy(self, instance):
+    #     goods = instance.goods
+    #     goods.fav_num -= 1
+    #     goods.save()
+    #     instance.delete()
 
     def get_queryset(self):
         return UserFav.objects.filter(user=self.request.user)
