@@ -142,7 +142,7 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
-# add by csp
+# add by ABC
 AUTH_USER_MODEL = 'users.UserProfile'
 
 MEDIA_URL = '/media/'
@@ -152,6 +152,7 @@ REST_FRAMEWORK = {
     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     # 'PAGE_SIZE': 10,
 
+    # 认证
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
@@ -159,6 +160,16 @@ REST_FRAMEWORK = {
     ),
 
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.AutoSchema',
+
+    # 流量控制
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '2/minute',
+        'user': '1000/day'
+    }
 }
 CORS_ORIGIN_ALLOW_ALL = True  # 跨域问题
 
@@ -182,3 +193,19 @@ SOCIAL_AUTH_WEIBO_KEY = WEIBO_APP_KEY
 SOCIAL_AUTH_WEIBO_SECRET = WEIBO_APP_SECRET
 
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/index/'
+
+
+REST_FRAMEWORK_EXTENSIONS = {
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60*3              # 缓存时间(s)
+}
+
+# 配置redis缓存
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": REDIS_URL,
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
