@@ -4,6 +4,7 @@ from rest_framework import mixins
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.authentication import SessionAuthentication
 from utils.permissions import IsOwnerOrReadOnly
+from apps.goods.models import Goods
 from apps.trades.models import ShoppingCart, OrderInfo, OrderGoods
 from apps.trades.serializers import ShoppingCartSerializer, ShoppingCartDetailSerializer, OrderInfoSerializer, \
     OrderDetailSerializer
@@ -59,14 +60,16 @@ class OrderViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, mixins.Crea
         order = serializer.save()
 
         shop_cart = ShoppingCart.objects.filter(user=self.request.user)
-        for good in shop_cart:
+        for buy in shop_cart:
             order_good = OrderGoods()
-            order_good.goods = good.goods
-            order_good.goods_num = good.nums
+            order_good.goods = buy.goods
+            order_good.goods_num = buy.nums
+            buy.goods.goods_num -= buy.nums
+            buy.goods.save()
             order_good.order = order
             order_good.save()
 
-            good.delete()
+            buy.delete()
 
         return order
 

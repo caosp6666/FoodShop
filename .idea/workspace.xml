@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/user_operations/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/utils/weibo_login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/goods/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user_operations/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user_operations/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user_operations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user_operations/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFoodshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFoodshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/trades/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trades/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -57,10 +58,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/media" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -80,7 +82,7 @@
       <recent name="D:\My_Project\MyFoodshop\apps" />
     </key>
   </component>
-  <component name="RunManager" selected="Django server.MyFoodshop">
+  <component name="RunManager" selected="Python.weibo_login">
     <configuration name="import_category_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MyFoodshop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,6 +149,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="weibo_login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MyFoodshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/weibo_login.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="MyFoodshop" type="Python.DjangoServer" factoryName="Django server">
       <module name="MyFoodshop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,6 +197,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.weibo_login" />
         <item itemvalue="Python.tests" />
         <item itemvalue="Python.import_goods_data" />
         <item itemvalue="Python.import_category_data" />
@@ -193,7 +218,8 @@
       <workItem from="1593499680375" duration="614000" />
       <workItem from="1593520261515" duration="5082000" />
       <workItem from="1594048462262" duration="651000" />
-      <workItem from="1594102017472" duration="37000000" />
+      <workItem from="1594102017472" duration="41827000" />
+      <workItem from="1594631024334" duration="9463000" />
     </task>
     <task id="LOCAL-00001" summary="通过django view实现商品列表json数据传输">
       <created>1593657775106</created>
@@ -412,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594186168663</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="收藏数、点击数">
+      <created>1594191417407</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1594191417407</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,41 +513,42 @@
     <MESSAGE value="功能完善" />
     <MESSAGE value="添加订单功能" />
     <MESSAGE value="小组件的开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="小组件的开发" />
+    <MESSAGE value="收藏数、点击数" />
+    <option name="LAST_COMMIT_MESSAGE" value="收藏数、点击数" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1593879122744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1593879122744" />
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594186167631">
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594191416515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594186167631" />
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594191416515" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1594110543483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594110543483" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1593486944697">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1594455019378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593486944697" />
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1594190197926">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594455019378" />
+    <state width="1877" height="88" key="GridCell.Tab.0.bottom" timestamp="1594647292397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594190197926" />
-    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1594190197926">
+    <state width="1877" height="88" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594647292397" />
+    <state width="1877" height="88" key="GridCell.Tab.0.center" timestamp="1594647292397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594190197926" />
-    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1594190197926">
+    <state width="1877" height="88" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594647292397" />
+    <state width="1877" height="88" key="GridCell.Tab.0.left" timestamp="1594647292397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594190197926" />
-    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1594190197926">
+    <state width="1877" height="88" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594647292397" />
+    <state width="1877" height="88" key="GridCell.Tab.0.right" timestamp="1594647292397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594190197926" />
+    <state width="1877" height="88" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594647292397" />
     <state x="798" y="230" key="RollbackChangesDialog" timestamp="1594190388842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -548,5 +582,6 @@
     <SUITE FILE_PATH="coverage/MyFoodshop$tests.coverage" NAME="tests Coverage Results" MODIFIED="1594010990759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/users" />
     <SUITE FILE_PATH="coverage/MyFoodshop$import_category_data.coverage" NAME="import_category_data Coverage Results" MODIFIED="1593524615112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
     <SUITE FILE_PATH="coverage/MyFoodshop$import_goods_data.coverage" NAME="import_goods_data Coverage Results" MODIFIED="1593532576929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
+    <SUITE FILE_PATH="coverage/MyFoodshop$weibo_login.coverage" NAME="weibo_login Coverage Results" MODIFIED="1594646574793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
   </component>
 </project>

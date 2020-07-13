@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'corsheaders',
+    'social_django',
 ]
 
 MIDDLEWARE = [
@@ -79,6 +80,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -161,6 +164,10 @@ CORS_ORIGIN_ALLOW_ALL = True  # 跨域问题
 
 AUTHENTICATION_BACKENDS = (
     'users.views.CustomAuthBackend',
+    'social_core.backends.qq.QQOAuth2',
+    'social_core.backends.weibo.WeiboOAuth2',
+    'social_core.backends.weixin.WeixinOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
 )
 
 JWT_AUTH = {
@@ -169,3 +176,9 @@ JWT_AUTH = {
 }
 
 REGEX_MOBILE = "^((\+|00)86)?((134\d{4})|((13[0-3|5-9]|14[1|5-9]|15[0-9]|16[2|5|6|7]|17[0-8]|18[0-9]|19[0-2|5-9])\d{8}))$"
+
+
+SOCIAL_AUTH_WEIBO_KEY = WEIBO_APP_KEY
+SOCIAL_AUTH_WEIBO_SECRET = WEIBO_APP_SECRET
+
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/index/'

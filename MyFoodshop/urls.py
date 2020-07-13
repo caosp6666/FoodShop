@@ -16,6 +16,7 @@ Including another URLconf
 
 from django.urls import path, re_path, include
 from django.views.static import serve
+from django.views.generic import TemplateView
 import xadmin
 from rest_framework.documentation import include_docs_urls
 from rest_framework.routers import DefaultRouter
@@ -53,9 +54,6 @@ router.register(r'hotsearchs', HotSearchWordsViewSet, basename='hotsearchs')
 # 首页分类展示列表
 router.register(r'indexgoods', IndexGoodsCategoryViewSet, basename='indexgoods')
 
-
-
-
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),  # xadmin后台
     path('', include(router.urls)),  # router url的配置
@@ -63,11 +61,14 @@ urlpatterns = [
     # path('goods/', GoodsListView.as_view(), name="goods-list"),
     # path('goods/', goods_list, name="goods-list"),
 
-    path('login/', obtain_jwt_token),  # 登陆
-    re_path(r'^api-auth/', include('rest_framework.urls')),  # DRF登陆的配置
-    path('docs/', include_docs_urls(title="MyFoodShop")),  # 文档
-    re_path(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),  # media文件获取
+    path('login/', obtain_jwt_token),                                           # 登陆
+    re_path(r'^api-auth/', include('rest_framework.urls')),                     # DRF登陆的配置
+    path('docs/', include_docs_urls(title="MyFoodShop")),                       # 文档
+    re_path(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),     # media文件获取
 
-    # path('api-token-auth/', views.obtain_auth_token),  # drf自带的token验证模式，测试用
-    # path('jwt_auth/', obtain_jwt_token),  # JWT验证模式，测试用
+    # path('api-token-auth/', views.obtain_auth_token),                         # drf自带的token验证模式，测试用
+    # path('jwt_auth/', obtain_jwt_token),                                      # JWT验证模式，测试用
+
+    re_path('', include('social_django.urls', namespace='social')),             # 第三方登录
+    re_path(r'^index/', TemplateView.as_view(template_name="index.html"), name="index"),
 ]
