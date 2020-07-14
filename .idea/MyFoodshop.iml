@@ -17,7 +17,7 @@
       <sourceFolder url="file://$MODULE_DIR$/apps" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/extra_apps" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.6.8 (sftp://csp@39.108.55.149:22/home/csp/.virtualenvs/foodshop/bin/python3.6)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">

@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/trades/keys/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/trades/keys/private_2018" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/trades/keys/public_2048" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MyFoodshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyFoodshop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/trades/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trades/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -65,7 +71,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -197,14 +203,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="MyFoodshop.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="sftp://csp@39.108.55.149:22/home/csp/.virtualenvs/foodshop/bin/python3.6" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
-      <option name="host" value="" />
+      <option name="host" value="0.0.0.0" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -213,6 +219,14 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Django server.MyFoodshop" />
+      <item itemvalue="Python.import_goods_data" />
+      <item itemvalue="Python.secret_key" />
+      <item itemvalue="Python.tests" />
+      <item itemvalue="Python.tests (1)" />
+      <item itemvalue="Python.weibo_login" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.tests (1)" />
@@ -239,7 +253,7 @@
       <workItem from="1594048462262" duration="651000" />
       <workItem from="1594102017472" duration="41827000" />
       <workItem from="1594631024334" duration="17440000" />
-      <workItem from="1594730221373" duration="2679000" />
+      <workItem from="1594730221373" duration="7114000" />
     </task>
     <task id="LOCAL-00001" summary="通过django view实现商品列表json数据传输">
       <created>1593657775106</created>
@@ -493,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594734662978</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="sentry">
+      <created>1594734875977</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1594734875977</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,14 +588,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="sentry" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Deployment" timestamp="1594735324852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1594735324852" />
     <state x="552" y="178" key="#Notifications" timestamp="1593879122744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1593879122744" />
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594734661711">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594740630754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594734661711" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594740630754" />
+    <state x="687" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594742147049">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594742147049" />
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594734874955">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594734874955" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1594110543483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -583,30 +616,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594455019378" />
-    <state width="1877" height="504" key="GridCell.Tab.0.bottom" timestamp="1594729830268">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1594740634020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="504" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594729830268" />
-    <state width="1877" height="504" key="GridCell.Tab.0.center" timestamp="1594729830268">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594740634020" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1594740634020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="504" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594729830268" />
-    <state width="1877" height="504" key="GridCell.Tab.0.left" timestamp="1594729830268">
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594740634020" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1594740634019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="504" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594729830268" />
-    <state width="1877" height="504" key="GridCell.Tab.0.right" timestamp="1594729830268">
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594740634019" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1594740634020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="504" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594729830268" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594740634020" />
     <state x="798" y="230" key="RollbackChangesDialog" timestamp="1594190388842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="798" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594190388842" />
-    <state x="461" y="161" key="SettingsEditor" timestamp="1594112626140">
+    <state x="461" y="161" key="SettingsEditor" timestamp="1594740558325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594112626140" />
+    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594740558325" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1594716555464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -623,6 +656,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593526688126" />
+    <state x="701" y="249" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1594740358684">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="701" y="249" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.0.1920.1040@0.0.1920.1040" timestamp="1594740358684" />
+    <state x="233" y="261" width="444" height="540" key="ftp.server.browser" timestamp="1594740492410">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="233" y="261" width="444" height="540" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1594740492410" />
     <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1594716249853">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
