@@ -159,6 +159,7 @@ REST_FRAMEWORK = {
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
     ),
 
+    # 文档
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.AutoSchema',
 
     # 流量控制
@@ -209,3 +210,17 @@ CACHES = {
         }
     }
 }
+
+
+# sentry
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
+sentry_sdk.init(
+    dsn=SENTRY_DSN,
+    integrations=[DjangoIntegration()],
+
+    # If you wish to associate users to errors (assuming you are using
+    # django.contrib.auth) you may enable sending PII data.
+    send_default_pii=True
+)
