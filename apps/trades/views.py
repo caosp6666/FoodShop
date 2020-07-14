@@ -35,8 +35,7 @@ class ShoppingCartViewSet(viewsets.ModelViewSet):
             return ShoppingCartSerializer
 
 
-class OrderViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, mixins.CreateModelMixin, mixins.DestroyModelMixin,
-                   viewsets.GenericViewSet):
+class OrderViewSet(viewsets.ModelViewSet):
     """
     订单管理
     list:
