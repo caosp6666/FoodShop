@@ -247,7 +247,8 @@
       <workItem from="1594048462262" duration="651000" />
       <workItem from="1594102017472" duration="41827000" />
       <workItem from="1594631024334" duration="17440000" />
-      <workItem from="1594730221373" duration="7235000" />
+      <workItem from="1594730221373" duration="7469000" />
+      <workItem from="1594742599771" duration="119000" />
     </task>
     <task id="LOCAL-00001" summary="通过django view实现商品列表json数据传输">
       <created>1593657775106</created>
@@ -515,7 +516,28 @@
       <option name="project" value="LOCAL" />
       <updated>1594742232991</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="支付">
+      <created>1594742346606</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1594742346606</updated>
+    </task>
+    <task id="LOCAL-00040" summary="支付">
+      <created>1594742539415</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1594742539415</updated>
+    </task>
+    <task id="LOCAL-00041" summary="支付">
+      <created>1594742562447</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1594742562447</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,10 +627,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594742147049" />
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594742538453">
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594742561584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594742538453" />
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594742561584" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1594110543483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -617,22 +639,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594455019378" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1594740634020">
+    <state width="1877" height="326" key="GridCell.Tab.0.bottom" timestamp="1594742576366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594740634020" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1594740634020">
+    <state width="1877" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594742576366" />
+    <state width="1877" height="326" key="GridCell.Tab.0.center" timestamp="1594742576366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594740634020" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1594740634019">
+    <state width="1877" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594742576366" />
+    <state width="1877" height="326" key="GridCell.Tab.0.left" timestamp="1594742576366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594740634019" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1594740634020">
+    <state width="1877" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594742576366" />
+    <state width="1877" height="326" key="GridCell.Tab.0.right" timestamp="1594742576366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594740634020" />
+    <state width="1877" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594742576366" />
     <state x="798" y="230" key="RollbackChangesDialog" timestamp="1594190388842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -649,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1594010669348" />
-    <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1594730223755">
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1594742599891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594730223755" />
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594742599891" />
     <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593526688126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
