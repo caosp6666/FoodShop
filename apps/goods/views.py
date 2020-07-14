@@ -90,6 +90,7 @@ class GoodsListViewSet(CacheResponseMixin, mixins.ListModelMixin, mixins.Retriev
         serializer = self.get_serializer(instance)
         return Response(serializer.data)
 
+
 class CategoryViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, viewsets.GenericViewSet):
     """
     商品分类数据

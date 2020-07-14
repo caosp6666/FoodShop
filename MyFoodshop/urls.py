@@ -47,6 +47,8 @@ router.register(r'shoppingcarts', ShoppingCartViewSet, basename='shoppingcarts')
 # 订单
 router.register(r'orders', OrderViewSet, basename='orders')
 
+
+
 # 首页轮播图
 router.register(r'banner', BannerViewSet, basename='banner')
 # 热搜词

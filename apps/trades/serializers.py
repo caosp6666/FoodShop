@@ -63,6 +63,7 @@ class OrderInfoSerializer(serializers.ModelSerializer):
     order_sn = serializers.CharField(read_only=True)
     pay_time = serializers.DateTimeField(read_only=True)
     add_time = serializers.DateTimeField(read_only=True, format='%Y-%m-%d %H:%M')
+
     def generate_order_sn(self):
         # 当前时间（秒）+userid+随机数
         import time
