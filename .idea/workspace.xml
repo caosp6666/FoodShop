@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/trades/keys/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/trades/keys/private_2018" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/trades/keys/public_2048" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MyFoodshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyFoodshop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +247,7 @@
       <workItem from="1594048462262" duration="651000" />
       <workItem from="1594102017472" duration="41827000" />
       <workItem from="1594631024334" duration="17440000" />
-      <workItem from="1594730221373" duration="7114000" />
+      <workItem from="1594730221373" duration="7235000" />
     </task>
     <task id="LOCAL-00001" summary="通过django view实现商品列表json数据传输">
       <created>1593657775106</created>
@@ -514,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594734875977</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="支付">
+      <created>1594742232991</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1594742232991</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,7 +561,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="添加三种方式比较" />
     <MESSAGE value="APIView初体验" />
     <MESSAGE value="ListAPIView的强大" />
     <MESSAGE value="viewset和router的使用" />
@@ -585,7 +585,8 @@
     <MESSAGE value="第三方登陆" />
     <MESSAGE value="缓存、流量控制" />
     <MESSAGE value="sentry" />
-    <option name="LAST_COMMIT_MESSAGE" value="sentry" />
+    <MESSAGE value="支付" />
+    <option name="LAST_COMMIT_MESSAGE" value="支付" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Deployment" timestamp="1594735324852">
@@ -604,10 +605,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594742147049" />
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594734874955">
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594742232066">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594734874955" />
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594742232066" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1594110543483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
