@@ -133,4 +133,6 @@ MyFoodshop/secret_key.py
 extra_apps
 */__pycache__
 .idea
-apps/trades/keys/
+apps/trades/keys/ali_key
+apps/trades/keys/private_2048
+apps/trades/keys/public_2048
