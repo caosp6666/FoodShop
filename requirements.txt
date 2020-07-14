@@ -21,7 +21,7 @@ djangorestframework-jwt==1.11.0
 drf-extensions==0.6.0
 et-xmlfile==1.0.1
 future==0.18.2
-httplib2==0.17.3
+httplib2==0.18.0
 idna==2.9
 itypes==1.2.0
 jdcal==1.4.1
