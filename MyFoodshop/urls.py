@@ -28,7 +28,7 @@ from goods.views import GoodsListView, GoodsListViewSet, CategoryViewSet, Banner
     IndexGoodsCategoryViewSet
 from users.views import SmsCodeViewSet, UserViewSet
 from user_operations.views import UserFavViewSet, MessageViewSet, AddressViewSet
-from apps.trades.views import ShoppingCartViewSet, OrderViewSet
+from apps.trades.views import ShoppingCartViewSet, OrderViewSet, AlipayView
 from .settings import MEDIA_ROOT
 
 router = DefaultRouter()
@@ -72,6 +72,7 @@ urlpatterns = [
     # path('jwt_auth/', obtain_jwt_token),                                      # JWT验证模式，测试用
 
     re_path('', include('social_django.urls', namespace='social')),  # 第三方登录
+    path('alipay/return', AlipayView.as_view(), name='alipay'),    # 支付宝回调页面
     re_path(r'^index/', TemplateView.as_view(template_name="index.html"), name="index"),
 ]
 

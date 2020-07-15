@@ -2,12 +2,16 @@ from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import mixins
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from rest_framework.views import APIView
 from rest_framework.authentication import SessionAuthentication
 from utils.permissions import IsOwnerOrReadOnly
 from apps.goods.models import Goods
 from apps.trades.models import ShoppingCart, OrderInfo, OrderGoods
 from apps.trades.serializers import ShoppingCartSerializer, ShoppingCartDetailSerializer, OrderInfoSerializer, \
     OrderDetailSerializer
+from utils.alipay import Alipay
+from MyFoodshop.settings import ali_public_key_path, private_key_path
+from MyFoodshop.secret_key import ALI_APP_ID
 
 
 class ShoppingCartViewSet(viewsets.ModelViewSet):
@@ -77,3 +81,27 @@ class OrderViewSet(viewsets.ModelViewSet):
             return OrderDetailSerializer
         else:
             return OrderInfoSerializer
+
+
+class AlipayView(APIView):
+    def get(self, request):
+        pass
+
+    def post(self, request):
+        process_dict = {}
+        for key, value in request.POST.items():
+            process_dict[key] = value
+        sign = process_dict.pop("sign")
+
+        alipay = Alipay(
+            appid=ALI_APP_ID,
+            app_private_key_path=private_key_path,
+            alipay_public_key_path=ali_public_key_path,
+            app_notify_url="http://39.108.55.149:8000/alipay/return",
+            return_url="http://39.108.55.149:8000/alipay/return",
+            method="alipay.trade.page.pay",
+            debug=True,  # 使用沙箱环境
+        )
+
+        result = alipay.verify(process_dict, sign)
+        print(result)

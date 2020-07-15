@@ -224,3 +224,7 @@ sentry_sdk.init(
     # django.contrib.auth) you may enable sending PII data.
     send_default_pii=True
 )
+
+# 支付宝
+ali_public_key_path = os.path.join(BASE_DIR, 'apps/trades/keys/ali_key')
+private_key_path = os.path.join(BASE_DIR, 'apps/trades/keys/private_2048')

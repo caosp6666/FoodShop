@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="支付">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/utils/alipay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MyFoodshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyFoodshop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFoodshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFoodshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/trades/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trades/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +84,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Django server.MyFoodshop">
-    <configuration name="import_goods_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="alipay (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MyFoodshop" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,12 +92,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db_tools" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_tools/import_goods_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/alipay.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,7 +106,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="secret_key" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="alipay" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MyFoodshop" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,12 +114,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MyFoodshop" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../WDshop/WdShop/apps/utils" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../WDshop/WdShop/apps/utils/alipay.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="alipy2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MyFoodshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyFoodshop/secret_key.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/alipy2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,28 +194,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="weibo_login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MyFoodshop" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/utils/weibo_login.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="MyFoodshop" type="Python.DjangoServer" factoryName="Django server">
       <module name="MyFoodshop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -215,19 +220,19 @@
     </configuration>
     <list>
       <item itemvalue="Django server.MyFoodshop" />
-      <item itemvalue="Python.import_goods_data" />
-      <item itemvalue="Python.secret_key" />
-      <item itemvalue="Python.tests" />
       <item itemvalue="Python.tests (1)" />
-      <item itemvalue="Python.weibo_login" />
+      <item itemvalue="Python.alipay" />
+      <item itemvalue="Python.alipay (1)" />
+      <item itemvalue="Python.alipy2" />
+      <item itemvalue="Python.tests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tests (1)" />
-        <item itemvalue="Python.secret_key" />
-        <item itemvalue="Python.weibo_login" />
+        <item itemvalue="Python.alipay (1)" />
+        <item itemvalue="Python.alipy2" />
         <item itemvalue="Python.tests" />
-        <item itemvalue="Python.import_goods_data" />
+        <item itemvalue="Python.alipay" />
+        <item itemvalue="Python.tests (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +253,8 @@
       <workItem from="1594102017472" duration="41827000" />
       <workItem from="1594631024334" duration="17440000" />
       <workItem from="1594730221373" duration="7469000" />
-      <workItem from="1594742599771" duration="1021000" />
+      <workItem from="1594742599771" duration="1245000" />
+      <workItem from="1594779200462" duration="16988000" />
     </task>
     <task id="LOCAL-00001" summary="通过django view实现商品列表json数据传输">
       <created>1593657775106</created>
@@ -551,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594742780095</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="修改gitignore">
+      <created>1594743635889</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1594743635889</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,7 +610,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="APIView初体验" />
     <MESSAGE value="ListAPIView的强大" />
     <MESSAGE value="viewset和router的使用" />
     <MESSAGE value="过滤、搜索、排序" />
@@ -622,29 +634,34 @@
     <MESSAGE value="缓存、流量控制" />
     <MESSAGE value="sentry" />
     <MESSAGE value="支付" />
-    <option name="LAST_COMMIT_MESSAGE" value="支付" />
+    <MESSAGE value="修改gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Deployment" timestamp="1594735324852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1594735324852" />
+    <state x="552" y="178" key="#Inspections" timestamp="1594796704253">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1594796704253" />
     <state x="552" y="178" key="#Notifications" timestamp="1593879122744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1593879122744" />
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594740630754">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594809926636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594740630754" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594809926636" />
     <state x="687" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594743216107">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594743216107" />
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594743243313">
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594743635112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594743243313" />
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594743635112" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1594110543483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -653,42 +670,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594455019378" />
-    <state width="1877" height="326" key="GridCell.Tab.0.bottom" timestamp="1594742576366">
+    <state width="1877" height="412" key="GridCell.Tab.0.bottom" timestamp="1594810159416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594742576366" />
-    <state width="1877" height="326" key="GridCell.Tab.0.center" timestamp="1594742576366">
+    <state width="1877" height="412" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594810159416" />
+    <state width="1877" height="412" key="GridCell.Tab.0.center" timestamp="1594810159416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594742576366" />
-    <state width="1877" height="326" key="GridCell.Tab.0.left" timestamp="1594742576366">
+    <state width="1877" height="412" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594810159416" />
+    <state width="1877" height="412" key="GridCell.Tab.0.left" timestamp="1594810159416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594742576366" />
-    <state width="1877" height="326" key="GridCell.Tab.0.right" timestamp="1594742576366">
+    <state width="1877" height="412" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594810159416" />
+    <state width="1877" height="412" key="GridCell.Tab.0.right" timestamp="1594810159416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594742576366" />
-    <state x="798" y="230" key="RollbackChangesDialog" timestamp="1594190388842">
+    <state width="1877" height="412" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594810159416" />
+    <state x="798" y="230" key="RollbackChangesDialog" timestamp="1594795742877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="798" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594190388842" />
-    <state x="461" y="161" key="SettingsEditor" timestamp="1594740558325">
+    <state x="798" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594795742877" />
+    <state x="461" y="161" key="SettingsEditor" timestamp="1594779218666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594740558325" />
+    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594779218666" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1594716555464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594716555464" />
-    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1594010669348">
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1594810040078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1594010669348" />
-    <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1594742599891">
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1594810040078" />
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1594779201368">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594742599891" />
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594779201368" />
     <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594743176135">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -707,11 +724,14 @@
     <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594716249853" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MyFoodshop$tests.coverage" NAME="tests Coverage Results" MODIFIED="1594010990759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/users" />
+    <SUITE FILE_PATH="coverage/MyFoodshop$tests.coverage" NAME="tests Coverage Results" MODIFIED="1594797246718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/users" />
     <SUITE FILE_PATH="coverage/MyFoodshop$import_category_data.coverage" NAME="import_category_data Coverage Results" MODIFIED="1593524615112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
+    <SUITE FILE_PATH="coverage/MyFoodshop$alipay__1_.coverage" NAME="alipay (1) Coverage Results" MODIFIED="1594809855902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
+    <SUITE FILE_PATH="coverage/MyFoodshop$alipay.coverage" NAME="alipay Coverage Results" MODIFIED="1594784693150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../WDshop/WdShop/apps/utils" />
     <SUITE FILE_PATH="coverage/MyFoodshop$secret_key.coverage" NAME="secret_key Coverage Results" MODIFIED="1594651648772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MyFoodshop" />
     <SUITE FILE_PATH="coverage/MyFoodshop$tests__1_.coverage" NAME="tests (1) Coverage Results" MODIFIED="1594715001143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/goods" />
     <SUITE FILE_PATH="coverage/MyFoodshop$import_goods_data.coverage" NAME="import_goods_data Coverage Results" MODIFIED="1593532576929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
+    <SUITE FILE_PATH="coverage/MyFoodshop$alipy2.coverage" NAME="alipy2 Coverage Results" MODIFIED="1594804865467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
     <SUITE FILE_PATH="coverage/MyFoodshop$weibo_login.coverage" NAME="weibo_login Coverage Results" MODIFIED="1594646574793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
   </component>
 </project>

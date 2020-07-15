@@ -3,5 +3,5 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.6.8 (sftp://csp@39.108.55.149:22/home/csp/.virtualenvs/foodshop/bin/python3.6)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8 (foodshop)" project-jdk-type="Python SDK" />
 </project>
