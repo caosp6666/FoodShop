@@ -139,14 +139,14 @@ if __name__ == '__main__':
         method="alipay.trade.page.pay",
         debug=True,  # 使用沙箱环境
     )
-    #
-    # test_url = alipay.pay(
-    #     out_trade_no='202435366611',
-    #     total_amount=1,
-    #     subject="测试订单"
-    # )
-    #
-    # print(test_url)
+
+    test_url = alipay.pay(
+        out_trade_no='2024353666123551',
+        total_amount=2,
+        subject="测试订单"
+    )
+
+    print(test_url)
 
 
     # 思路是获取参数（将sign pop处出来），用支付宝公钥签名，然后跟支付宝的签名比对，一致即可

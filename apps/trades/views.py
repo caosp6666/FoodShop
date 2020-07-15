@@ -1,9 +1,12 @@
+from datetime import datetime
 from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import mixins
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.views import APIView
+from rest_framework.response import Response
 from rest_framework.authentication import SessionAuthentication
+from django.shortcuts import redirect
 from utils.permissions import IsOwnerOrReadOnly
 from apps.goods.models import Goods
 from apps.trades.models import ShoppingCart, OrderInfo, OrderGoods
@@ -85,13 +88,18 @@ class OrderViewSet(viewsets.ModelViewSet):
 
 class AlipayView(APIView):
     def get(self, request):
-        pass
+        # 让支付宝的return直接返回支付页面，不处理，只通过post处理
+        # 通知前端从index页面调转到订单页面
+        response = redirect("index")
+        # response.set_cookie("nextPath", "pay", max_age=5)  # vue路由设置有问题
+        return response
 
     def post(self, request):
         process_dict = {}  # 得到一个字符串参数对应字典
         for key, value in request.POST.items():
             process_dict[key] = value
         sign = process_dict.pop("sign")
+        process_dict.pop("sign_type")
 
         alipay = Alipay(
             appid=ALI_APP_ID,
@@ -104,4 +112,26 @@ class AlipayView(APIView):
         )
 
         result = alipay.verify(process_dict, sign)
-        print(result)
+
+        if result:
+            order_sn = process_dict.get('out_trade_no', None)
+            trade_no = process_dict.get('trade_no', None)
+            trade_status = process_dict.get('trade_status', None)
+
+            existed_orders = OrderInfo.objects.filter(order_sn=order_sn)
+            for existed_order in existed_orders:
+                # 修改销量
+                order_goods = existed_order.goods.all()
+                for order_good in order_goods:
+                    goods = order_good.goods
+                    goods.sold_num += order_good.goods_num
+                    goods.save()
+
+                existed_order.pay_status = trade_status
+                existed_order.trade_no = trade_no
+                existed_order.pay_time = datetime.now()
+                existed_order.save()
+
+            return Response("success")
+        else:
+            return Response("fail")

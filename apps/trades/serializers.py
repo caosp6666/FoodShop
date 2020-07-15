@@ -2,6 +2,9 @@ from rest_framework import serializers
 from apps.goods.models import Goods
 from apps.trades.models import ShoppingCart, OrderInfo, OrderGoods
 from apps.goods.serializers import GoodsSerializer
+from utils.alipay import Alipay
+from MyFoodshop.secret_key import ALI_APP_ID
+from MyFoodshop.settings import ali_public_key_path, private_key_path
 
 
 class ShoppingCartSerializer(serializers.Serializer):
@@ -63,6 +66,24 @@ class OrderInfoSerializer(serializers.ModelSerializer):
     order_sn = serializers.CharField(read_only=True)
     pay_time = serializers.DateTimeField(read_only=True)
     add_time = serializers.DateTimeField(read_only=True, format='%Y-%m-%d %H:%M')
+    alipay_url = serializers.SerializerMethodField(read_only=True)
+
+    def get_alipay_url(self, obj):
+        alipay = Alipay(
+            appid=ALI_APP_ID,
+            app_private_key_path=private_key_path,
+            alipay_public_key_path=ali_public_key_path,
+            app_notify_url="http://39.108.55.149:8000/alipay/return",
+            return_url="http://39.108.55.149:8000/alipay/return",
+            method="alipay.trade.page.pay",
+            debug=True,  # 使用沙箱环境
+        )
+        url = alipay.pay(
+            out_trade_no=obj.order_sn,
+            total_amount=obj.order_mount,
+            subject=obj.order_sn
+        )
+        return url
 
     def generate_order_sn(self):
         # 当前时间（秒）+userid+随机数
@@ -94,7 +115,25 @@ class OrderGoodsSerializer(serializers.ModelSerializer):
 
 class OrderDetailSerializer(serializers.ModelSerializer):
     goods = OrderGoodsSerializer(many=True)
+    alipay_url = serializers.SerializerMethodField(read_only=True)
+
+    def get_alipay_url(self, obj):
+        alipay = Alipay(
+            appid=ALI_APP_ID,
+            app_private_key_path=private_key_path,
+            alipay_public_key_path=ali_public_key_path,
+            app_notify_url="http://39.108.55.149:8000/alipay/return",
+            return_url="http://39.108.55.149:8000/alipay/return",
+            method="alipay.trade.page.pay",
+            debug=True,  # 使用沙箱环境
+        )
+        url = alipay.pay(
+            out_trade_no=obj.order_sn,
+            total_amount=obj.order_mount,
+            subject=obj.order_sn
+        )
+        return url
 
     class Meta:
         model = OrderInfo
-        fields = ("goods", "signer_name", "singer_mobile", "order_sn", "pay_status", "address")
+        fields = ("goods", "signer_name", "singer_mobile", "order_sn", "pay_status", "address", "alipay_url")

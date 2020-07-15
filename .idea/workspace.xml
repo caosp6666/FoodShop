@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f876f21-f03f-456a-8147-4418faa59f10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/fonts/iconfont.60cf513.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/iconfont.fcaaa27.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/loginBg1.23c7104.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/index.entry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyFoodshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyFoodshop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/trades/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trades/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/trades/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/trades/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/utils/alipay.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/utils/alipay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +66,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -70,14 +76,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\My_Project\MyFoodshop\media" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\My_Project\MyFoodshop\media\goods\images" />
       <recent name="D:\My_Project\MyFoodshop\db_tools\data" />
       <recent name="D:\My_Project\MyFoodshop\extra_apps" />
       <recent name="D:\My_Project\MyFoodshop\apps" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My_Project\MyFoodshop\static" />
+      <recent name="D:\My_Project\MyFoodshop\templates" />
+      <recent name="D:\My_Project\MyFoodshop\media" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.MyFoodshop">
@@ -251,7 +259,7 @@
       <workItem from="1594631024334" duration="17440000" />
       <workItem from="1594730221373" duration="7469000" />
       <workItem from="1594742599771" duration="1245000" />
-      <workItem from="1594779200462" duration="17483000" />
+      <workItem from="1594779200462" duration="24913000" />
     </task>
     <task id="LOCAL-00001" summary="通过django view实现商品列表json数据传输">
       <created>1593657775106</created>
@@ -568,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594810718061</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="alipay">
+      <created>1594811293365</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1594811293365</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,10 +677,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594743216107" />
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594810717250">
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1594811292694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594810717250" />
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594811292694" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1594110543483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -674,22 +689,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594455019378" />
-    <state width="1877" height="419" key="GridCell.Tab.0.bottom" timestamp="1594811155933">
+    <state width="1877" height="474" key="GridCell.Tab.0.bottom" timestamp="1594824243137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="419" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594811155933" />
-    <state width="1877" height="419" key="GridCell.Tab.0.center" timestamp="1594811155933">
+    <state width="1877" height="474" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594824243137" />
+    <state width="1877" height="474" key="GridCell.Tab.0.center" timestamp="1594824243137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="419" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594811155933" />
-    <state width="1877" height="419" key="GridCell.Tab.0.left" timestamp="1594811155933">
+    <state width="1877" height="474" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594824243137" />
+    <state width="1877" height="474" key="GridCell.Tab.0.left" timestamp="1594824243137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="419" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594811155933" />
-    <state width="1877" height="419" key="GridCell.Tab.0.right" timestamp="1594811155933">
+    <state width="1877" height="474" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594824243137" />
+    <state width="1877" height="474" key="GridCell.Tab.0.right" timestamp="1594824243137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="419" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594811155933" />
+    <state width="1877" height="474" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594824243137" />
     <state x="798" y="230" key="RollbackChangesDialog" timestamp="1594795742877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -702,10 +717,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594716555464" />
-    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1594810040078">
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1594822323235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1594810040078" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1594822323235" />
     <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1594779201368">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -732,13 +747,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/apps/trades/views.py</url>
-          <line>93</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/apps/utils/alipay.py</url>
-          <line>156</line>
-          <option name="timeStamp" value="16" />
+          <line>92</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -746,7 +756,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MyFoodshop$tests.coverage" NAME="tests Coverage Results" MODIFIED="1594797246718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/users" />
     <SUITE FILE_PATH="coverage/MyFoodshop$import_category_data.coverage" NAME="import_category_data Coverage Results" MODIFIED="1593524615112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_tools" />
-    <SUITE FILE_PATH="coverage/MyFoodshop$alipay__1_.coverage" NAME="alipay (1) Coverage Results" MODIFIED="1594811134486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
+    <SUITE FILE_PATH="coverage/MyFoodshop$alipay__1_.coverage" NAME="alipay (1) Coverage Results" MODIFIED="1594811440184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/utils" />
     <SUITE FILE_PATH="coverage/MyFoodshop$alipay.coverage" NAME="alipay Coverage Results" MODIFIED="1594784693150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../WDshop/WdShop/apps/utils" />
     <SUITE FILE_PATH="coverage/MyFoodshop$secret_key.coverage" NAME="secret_key Coverage Results" MODIFIED="1594651648772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MyFoodshop" />
     <SUITE FILE_PATH="coverage/MyFoodshop$tests__1_.coverage" NAME="tests (1) Coverage Results" MODIFIED="1594715001143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/goods" />

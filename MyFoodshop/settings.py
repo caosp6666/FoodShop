@@ -201,15 +201,15 @@ REST_FRAMEWORK_EXTENSIONS = {
 }
 
 # 配置redis缓存
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": REDIS_URL,
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    }
-}
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": REDIS_URL,
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     }
+# }
 
 
 # sentry
@@ -228,3 +228,8 @@ sentry_sdk.init(
 # 支付宝
 ali_public_key_path = os.path.join(BASE_DIR, 'apps/trades/keys/ali_key')
 private_key_path = os.path.join(BASE_DIR, 'apps/trades/keys/private_2048')
+
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
