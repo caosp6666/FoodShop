@@ -139,22 +139,22 @@ if __name__ == '__main__':
         method="alipay.trade.page.pay",
         debug=True,  # 使用沙箱环境
     )
-
-    test_url = alipay.pay(
-        out_trade_no='202345611',
-        total_amount=124,
-        subject="测试订单"
-    )
-
-    print(test_url)
+    #
+    # test_url = alipay.pay(
+    #     out_trade_no='202435366611',
+    #     total_amount=1,
+    #     subject="测试订单"
+    # )
+    #
+    # print(test_url)
 
 
     # 思路是获取参数（将sign pop处出来），用支付宝公钥签名，然后跟支付宝的签名比对，一致即可
-    # return_get_url = 'http://39.108.55.149:8000/?charset=utf-8&out_trade_no=2024567934511&method=alipay.trade.page.pay.return&total_amount=111.30&sign=Rn7UuWDzwbnvGmZXTz7b%2F0%2BscWbb8jhNP9N%2FIsB94TqY49CpxJqERRmNjoD9QIUjtJ62EXuYQ92%2FjVBspGKpyBDrPMKyJKXS5K1z%2BPcFnB56hm6zBOy3txDie0xonSFYgasXd4atS6yZCJnsxR9yeIstMb3OCl140Q%2BKp2d%2BY8nC3ExPEGTLzplg16DfOSOzoluV47OePh2FgR2dXJ1r60EBSgFlpLQ92C41u6idFCXUUEqrJeGemtJEBkuvJqdFyq0FLXkBhv%2FJq44NgdgvYGX4GDReZlgyprzL4%2BljEzRhbV9LcXfeAa5RoHK9IgRqf0TyaVhAwPT5TuQKTsUp3A%3D%3D&trade_no=2020071522001441490501326508&auth_app_id=2016102300744775&version=1.0&app_id=2016102300744775&sign_type=RSA2&seller_id=2088102180761534&timestamp=2020-07-15+17%3A14%3A07'
-    # o = urlparse(return_get_url)  # 解析url
-    # query = parse_qs(o.query)  # 解析参数
-    # ali_sign = query.pop('sign')[0]  # 获得ali的sign
-    # query_test = {}  # 其余的参数，保存为一个dict
-    # for k, v in query.items():
-    #     query_test[k] = v[0]  # 因为解析完的是数组
-    # print(alipay.verify(query_test, ali_sign))
+    return_get_url = 'http://39.108.55.149:8000/alipay/return?charset=utf-8&out_trade_no=202435366611&method=alipay.trade.page.pay.return&total_amount=1.00&sign=L4p3GPCVgj7R9Prx4d1g1%2BcQ9QWuTb0qi2Q2TTXooJcA0h6CdCuePSWfr7tEDr%2Bg7HtoGvtmm6rna0mNq2x2wbx%2B3NuylzqcYZxDaAFbfxhxBPpI%2BGE3hM5doDJNYPQC6X0HQt8rMsYhGN5VD0baYWeiZJr39uASbQ%2F9uXm2825OzlLFQ7Yoz3kNoHuZb8qEZGrvRNJrOPT5uGkZj4GmerhwEVYsz4z1izFqV%2FtKwzrnJf5QcMubvoQAs8R9rHzt4UGcnvW7fN9PDG9D9sPa5Wr6AfWRCeefKHowcC00S5HAmZ2UnAOrwN1ND5uNz2cTfx%2BqPdJq61AIPTS4%2F6tn6w%3D%3D&trade_no=2020071522001441490501326181&auth_app_id=2016102300744775&version=1.0&app_id=2016102300744775&sign_type=RSA2&seller_id=2088102180761534&timestamp=2020-07-15+19%3A01%3A14'
+    o = urlparse(return_get_url)  # 解析url
+    query = parse_qs(o.query)  # 解析参数
+    ali_sign = query.pop('sign')[0]  # 获得ali的sign
+    query_test = {}  # 其余的参数，保存为一个dict
+    for k, v in query.items():
+        query_test[k] = v[0]  # 因为解析完的是数组
+    print(alipay.verify(query_test, ali_sign))

@@ -88,7 +88,7 @@ class AlipayView(APIView):
         pass
 
     def post(self, request):
-        process_dict = {}
+        process_dict = {}  # 得到一个字符串参数对应字典
         for key, value in request.POST.items():
             process_dict[key] = value
         sign = process_dict.pop("sign")
